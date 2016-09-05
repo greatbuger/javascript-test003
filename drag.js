@@ -5,6 +5,30 @@ window.onload=function drag(){
     var otitle=document.getElementById('logo');
     otitle.onmousedown=fndown;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 /*鼠标按下函数实现*/
 function fndown(event){
@@ -32,6 +56,22 @@ function fnmove(e,posx,posy){
     var odrag=document.getElementById('login');
     var l=e.clientX-posx;
     var t=e.clientY-posy;
+    var winW=document.documentElement.clientWidth||document.body.clientWidth;
+    var winH=document.documentElement.clientHeight||document.body.clientHeight;
+    maxW=winW-odrag.offsetWidth-10;/*-10是关闭按钮的宽度*/
+    maxH=winH-odrag.offsetHeight;
+    if(l<0){
+        l=0
+    }
+    else if(l>maxW){
+        l=maxW
+    }
+    if(t>maxH){
+        t=maxH
+    }
+    else if(t<10){
+        t=10
+    }
     odrag.style.left=l+'px';
     odrag.style.top=t+'px';
 }
