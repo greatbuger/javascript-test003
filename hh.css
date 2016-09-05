@@ -1,0 +1,132 @@
+#login{
+    width:380px;
+    height:247px;
+    position:absolute;
+    left:200px;
+    top:120px;
+    background: #f6f6f6;
+    border: 1px solid #ccc;
+    boder-radius:10px;/*定义登录面版的圆角*/
+    box-shadow: 0 0 8px #555;
+    text-align: center;
+
+}
+
+
+#close{
+    position:absolute;
+    top:-10px;
+    right:-10px;/*right属性主要用于绝对定位，规定元素的右边缘。该属性定义了定位元素右外边距边界与其包含块右边界之间的偏移。可用负值*/
+    width:28px;
+    height:28px;
+    background: url(images/boxy_btn.png) no-repeat center;
+    cursor:pointer;/*光标变成小手形状*/
+}
+
+#logo{
+    width:200px;
+    height:44px;
+    margin:10px auto 30px auto;
+    background: url(images/login_window_logo.png) no-repeat top right;
+    cursor: move;/*光标变成可被移动的默认形状*/
+}
+
+#account,#password{
+    display:block;/*生成块级元素，前后有换行符*/
+    font-size: 16px;
+    font-family:arial;
+    font-weight: bolder;/*字体加粗*/
+    line-height: 20px;
+}
+
+#login input[type="text"]{
+    padding-left:5px;
+    font-size: 14px;
+    line-height: 20px;
+    height:20px;
+    border-radius: 15px;
+    outline: 0;
+    ime-mode: disabled;
+    border:1px solid #ccc;
+}
+
+#btnbox{
+    width:250px;
+    margin-left: 70px;
+}
+#login input[type="submit"]{
+    width:110px;
+    height: 40px;
+    border:0;
+    outline: 0;
+    display:block;
+    margin-right: 20px;
+    float:left;
+    background:url(images/login_btn.png) no-repeat right top;
+}
+
+#select {
+    display: block;
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#select span{
+    display: block;
+    margin-left: 21px;
+    text-align:left;
+    padding-left: 21px;
+    background: url(images/icon-7.png) no-repeat 5px center;
+    line-height: 43px;
+}
+
+#select ul{
+    list-style: none;
+    padding:0px;
+    margin:-10px 0 0 -9px;
+    display:none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc #6a6a6a #666 #cdcdcd;
+    background: white;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 100px;
+    height: 120px;
+}
+#select ul li{
+    margin: 0;
+    padding:3px 0px 0px 30px;
+    width:70px;
+    height:16px;
+    line-height: 16px;
+    cursor:pointer;
+    text-align: left;
+}
+.online{
+    background: url(images/icon-1.png) no-repeat 6px center;
+}
+
+.callme{
+    background: url(images/icon-5.png) no-repeat 6px center;
+}
+
+.away{
+    background: url(images/icon-2.png) no-repeat 6px center;
+}
+
+.busy{
+    background: url(images/icon-3.png) no-repeat 6px center;
+}
+
+.silent{
+    background: url(images/icon-6.png) no-repeat 6px center;
+}
+
+.hidden{
+    background: url(images/icon-4.png) no-repeat 6px center;
+}
