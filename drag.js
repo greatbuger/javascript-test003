@@ -2,8 +2,16 @@
  * Created by wei on 2016/9/5.
  */
 window.onload=function drag(){
+    /*实现移动面板*/
     var otitle=document.getElementById('logo');
     otitle.onmousedown=fndown;
+    
+    /*点击关闭按钮实现关闭面板*/
+    var oclose=document.getElementById('close');
+    oclose.onclick=function(){
+        document.getElementById('login').style.display='none';
+    }
+    
 
 
 
