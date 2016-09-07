@@ -14,29 +14,6 @@ window.onload=function drag(){
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 /*鼠标按下函数实现*/
 function fndown(event){
