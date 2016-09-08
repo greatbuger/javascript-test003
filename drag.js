@@ -12,6 +12,7 @@ window.onload=function drag(){
         document.getElementById('login').style.display='none';
     }
     
+    /
 
 
 }
