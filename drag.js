@@ -69,19 +69,3 @@ function fnmove(e,posx,posy){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
