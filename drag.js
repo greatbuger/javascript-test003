@@ -12,7 +12,50 @@ window.onload=function drag(){
         document.getElementById('login').style.display='none';
     }
     
-    /
+   /*实现状态的切换*/
+    var myoption=document.getElementById('option');
+        myselect=document.getElementById('select');
+    
+    myselect.onclick=function(e){
+        e=event||window.event;
+        if(e.stopPropagation){
+            e.stopPropagation()
+        }
+        else{
+            e.cancelBubble=true;
+        }
+        
+        var mymenu=document.getElementById('menu');
+        mymenu.style.display='block';
+    }
+
+    var mymenu=document.getElementById('menu'),
+        lis=document.getElementsByTagName('li');
+    for(var i=0;i<lis.length;i++){
+        lis[i].onmouseover=function(){
+            this.style.backgroundColor='#567';
+        }
+        lis[i].onmouseout=function(){
+            this.style.backgroundColor='#fff';
+        }
+        lis[i].onclick=function(e){
+            e=event||window.event;
+            if(e.stopPropagation){
+                e.stopPropagation();
+            }
+            else{
+                e.cancelBubble=true;
+            }
+            myoption.innerHTML=this.innerHTML;
+            mymenu.style.display='none';
+            myselect.className=this.id;
+        }
+        document.onclick=function(){
+            mymenu.style.display='none';
+        }
+
+    }
+    
 
 
 }
